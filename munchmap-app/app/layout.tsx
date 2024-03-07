@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import '@mantine/core/styles.css';
-import { createTheme, MantineProvider, ColorSchemeScript } from '@mantine/core';
+import "@mantine/core/styles.css";
+import { createTheme, MantineProvider, ColorSchemeScript } from "@mantine/core";
+import { HeaderMegaMenu } from "./ui/Header";
 
 const theme = createTheme({
   /** Put your mantine theme override here */
@@ -23,7 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <MantineProvider theme={theme}>{children}</MantineProvider></body>
+        <MantineProvider theme={theme}>
+          <HeaderMegaMenu></HeaderMegaMenu>
+          {children}
+        </MantineProvider>
+      </body>
     </html>
   );
 }

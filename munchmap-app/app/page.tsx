@@ -1,10 +1,14 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { ColorSchemeToggle } from "./ColorToggle";
+import { HeaderMegaMenu } from "./ui/Header";
 
 export default function Home() {
   return (
-    <ColorSchemeToggle></ColorSchemeToggle>
+    <div></div>
+    // <div className={styles.mainbackground}>
+    //   <HeaderMegaMenu></HeaderMegaMenu>
+    // </div>
     // <main className={styles.main}>
     //   <div className={styles.description}>
     //     <p>

@@ -228,3 +228,7 @@
     transform: rotate(0deg);
   }
 }
+
+.mainbackground{
+  background-color: #b4d9b0;
+}

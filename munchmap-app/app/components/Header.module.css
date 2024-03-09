@@ -5,6 +5,10 @@
     background-color: #008195;
     color: white;
   }
+
+  .header > div > div {
+    height: 100%
+  }
   
   .link {
     display: flex;

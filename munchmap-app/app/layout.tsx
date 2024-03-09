@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import "@mantine/core/styles.css";
 import { createTheme, MantineProvider, ColorSchemeScript } from "@mantine/core";
-import { HeaderMegaMenu } from "./components/Header";
+import Head from "./components/Header";
 
 const theme = createTheme({
   /** Put your mantine theme override here */
@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <MantineProvider theme={theme}>
-          <HeaderMegaMenu>{children}</HeaderMegaMenu>
+          <Head>{children}</Head>
         </MantineProvider>
       </body>
     </html>

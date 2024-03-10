@@ -4,6 +4,7 @@ import "./globals.css";
 import "@mantine/core/styles.css";
 import { createTheme, MantineProvider } from "@mantine/core";
 import { HeaderNoGrid } from "./components/Header";
+import '@mantine/carousel/styles.css';
 
 const theme = createTheme({
   /** Put your mantine theme override here */
@@ -25,7 +26,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className} style={{backgroundColor: "#b4d9b0"}}>
         <MantineProvider theme={theme}>
-          {/* <Head>{children}</Head> */}
           <HeaderNoGrid>{children}</HeaderNoGrid>
         </MantineProvider>
       </body>

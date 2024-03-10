@@ -12,6 +12,7 @@ import {
 import classes from "./Header.module.css";
 import { useDisclosure } from "@mantine/hooks";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function HeaderMegaMenu({ children }: any) {
   return (
@@ -66,7 +67,7 @@ export default function HeaderMegaMenu({ children }: any) {
 export function HeaderNoGrid({ children }: any) {
   const links = [
     { link: "/", label: "Home" },
-    { link: "/index", label: "Index" },
+    { link: "/indexlist", label: "Index" },
     { link: "/map", label: "Map" },
     { link: "/info", label: "Info" },
   ];
@@ -75,18 +76,17 @@ export function HeaderNoGrid({ children }: any) {
   const [active, setActive] = useState(links[0].link);
 
   const items = links.map((link) => (
-    <a
+    <Link
       key={link.label}
       href={link.link}
       className={classes.link}
       data-active={active === link.link || undefined}
       onClick={(event) => {
-        event.preventDefault();
         setActive(link.link);
       }}
     >
       {link.label}
-    </a>
+    </Link>
   ));
 
   return (

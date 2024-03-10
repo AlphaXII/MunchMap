@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "@mantine/core/styles.css";
-import { createTheme, MantineProvider, ColorSchemeScript } from "@mantine/core";
-import Head, { HeaderNoGrid } from "./components/Header";
+import { createTheme, MantineProvider } from "@mantine/core";
+import { HeaderNoGrid } from "./components/Header";
 
 const theme = createTheme({
   /** Put your mantine theme override here */

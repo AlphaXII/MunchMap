@@ -4,6 +4,8 @@ import { ColorSchemeToggle } from "./ColorToggle";
 
 export default function Home() {
   return (
-    <div>hello world</div>
+    <>
+      <div>hello world</div>
+    </>
   );
 }

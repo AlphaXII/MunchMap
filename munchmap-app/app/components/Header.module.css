@@ -5,6 +5,10 @@
     background-color: #008195;
     color: white;
   }
+
+  .header > div > div {
+    height: 100%
+  }
   
   .link {
     display: flex;
@@ -24,6 +28,11 @@
   
     @mixin hover {
       background-color: lightgrey;
+    }
+
+    [data-mantine-color-scheme] &[data-active] {
+      background-color: var(--mantine-color-blue-filled);
+      color: var(--mantine-color-white);
     }
   }
   

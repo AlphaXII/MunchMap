@@ -1,19 +1,14 @@
 "use client";
-import { Grid, Button, Box, Group, GridCol, Burger, Drawer} from "@mantine/core";
 import {
-  HoverCard,
-  UnstyledButton,
-  Text,
-  SimpleGrid,
-  ThemeIcon,
-  Anchor,
+  Grid,
+  Button,
+  Group,
   Divider,
-  Center,
-  Collapse,
+  Burger,
+  Drawer,
   ScrollArea,
   rem,
-  useMantineTheme,
-} from '@mantine/core';
+} from "@mantine/core";
 import classes from "./Header.module.css";
 import { useDisclosure } from "@mantine/hooks";
 import { useState } from "react";
@@ -96,59 +91,22 @@ export function HeaderNoGrid({ children }: any) {
 
   return (
     <>
-      <header
-        className={classes.header}
-        style={{
-          width: "100%",
-          justifyContent: "flex-start",
-          display: "inline-flex",
-        }}
-      >
-        <Group
-          h="100%"
-          style={{
-            justifyContent: "flex-start",
-            display: "inline-flex",
-            width: "100px",
-          }}
-        >
+      <header className={classes.header}>
+        <Group h="100%" justify="flex-start" className={classes.mmlogo}>
           MunchMap
         </Group>
-        <Group
-          h="100%"
-          style={{
-            justifyContent: "space-between",
-            display: "inline-flex",
-            width: "calc(100% - 100px)",
-          }}
-          visibleFrom="sm"
-        >
-          <Group h="100%" style={{ display: "inline-flex" }} gap={5}>
+        <Group h="100%" justify="space-between" visibleFrom="sm" className={classes.navContainer}>
+          <Group h="100%" gap={5}>
             {items}
           </Group>
-          <Button variant="default" style={{ display: "inline-flex" }}>
-            Log in
-          </Button>
+          <Button variant="default">Log in</Button>
         </Group>
-        <Group h="100%" justify="flex-end" style={{
-            display: "inline-flex",
-            width: "calc(100% - 100px)",
-          }}
-          hiddenFrom="sm" >
+        <Group h="100%" justify="flex-end" hiddenFrom="sm" className={classes.burger}>
           <Burger size="md" opened={opened} onClick={toggle} hiddenFrom="sm" />
         </Group>
-        
       </header>
 
-      <Drawer
-        opened={opened}
-        onClose={close}
-        size="100%"
-        padding="md"
-        title="Navigation"
-        hiddenFrom="sm"
-        zIndex={1000000}
-      >
+      <Drawer opened={opened} onClose={close} size="100%" padding="md" title="Navigation" hiddenFrom="sm" zIndex={1000000}>
         <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
           <Divider my="sm" />
           {items}

@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import "@mantine/core/styles.css";
 import { createTheme, MantineProvider, ColorSchemeScript } from "@mantine/core";
-import Head from "./components/Header";
+import Head, { HeaderNoGrid } from "./components/Header";
 
 const theme = createTheme({
   /** Put your mantine theme override here */
@@ -23,9 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className} style={{backgroundColor: "#b4d9b0"}}>
         <MantineProvider theme={theme}>
-          <Head>{children}</Head>
+          {/* <Head>{children}</Head> */}
+          <HeaderNoGrid>{children}</HeaderNoGrid>
         </MantineProvider>
       </body>
     </html>

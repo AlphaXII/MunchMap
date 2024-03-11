@@ -1,0 +1,58 @@
+.card {
+  background-color: var(--mantine-color-yellow-5);
+  height: 300px;
+  width: 100%;
+}
+
+.group {
+    height: 300px;
+    width: 90;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    text-align: left;
+}
+
+
+.restName {
+    padding-top: 30px;
+    padding-left: 20px;
+    display: inline-flex;
+    font-weight: 800;
+    font-size: x-large;
+    color: #f8f9fa;
+  }
+
+.restAddress {
+    padding-left: 20px;
+    display: inline-flex;
+    font-weight: 400;
+    font-size: large;
+    color: #f8f9fa;
+}
+
+.textBox {
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 120px;
+    width: 100%; 
+    display: inline-flex;
+    font-weight: 300;
+    font-size: medium;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: black;
+}
+
+.articleLink {
+    padding: 10px;
+    text-align: right;
+    color: #f8f9fa;
+}
+
+.image {
+    height: 100%;
+  }
+

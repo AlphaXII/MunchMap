@@ -25,7 +25,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className} style={{backgroundColor: "#b4d9b0"}}>
         <MantineProvider theme={theme}>
-      
           <Header>{children}</Header>
         </MantineProvider>
       </body>

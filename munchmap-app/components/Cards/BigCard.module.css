@@ -4,61 +4,72 @@
   width: 100%;
 }
 
+.card2 {
+  background-color: var(--mantine-color-yellow-5);
+  width: 100%;
+}
+
+.section {
+  display: flex;
+}
+
 .group {
-    height: 300px;
-    width: 100%;
+  height: 300px;
+  width: 100%;
 }
 
 .container {
-    height: 100%;
-    width: 50%;
-    text-align: left;
+  height: 100%;
+  width: 50%;
+  text-align: left;
 }
 
+.container2 {
+  width: 100%;
+  text-align: left;
+}
 
 .restName {
-    width: 70%;
-    padding-top: 30px;
-    padding-left: 20px;
-    display: inline-flex;
-    font-weight: 800;
-    font-size: x-large;
-    color: #f8f9fa;
-    
-  }
+  width: 70%;
+  padding-top: 30px;
+  padding-left: 20px;
+  display: inline-flex;
+  font-weight: 800;
+  font-size: x-large;
+  color: #f8f9fa;
+}
 
 .restAddress {
-    padding-left: 20px;
-    display: inline-flex;
-    font-weight: 400;
-    font-size: large;
-    color: #f8f9fa;
+  padding-left: 20px;
+  display: flex;
+  font-weight: 400;
+  font-size: large;
+  color: #f8f9fa;
 }
 
 .textBox {
-    padding-top: 10px;
-    padding-left: 20px;
-    height: 110px;
-    font-weight: 300;
-    color: black;
-    
+  padding-top: 10px;
+  padding-left: 20px;
+  height: 110px;
+  font-weight: 300;
+  color: black;
 }
 
-.articleLink a{
-    padding: 10px;
-    display: flex;
-    justify-content: right;
-    color: #f8f9fa;
-    text-decoration: none
+.articleLink a {
+  padding: 10px;
+  display: flex;
+  justify-content: right;
+  color: #f8f9fa;
+  text-decoration: none;
 }
 
 .image {
-    height: 100%;
-  }
-
-.badge {
-    margin-top: 35px;
-    margin-right: 10px;
-    float: right;
+  height: 100%;
 }
 
+.badge {
+  position: absolute;
+  margin-top: 35px;
+  margin-right: 20px;
+  float: right;
+}

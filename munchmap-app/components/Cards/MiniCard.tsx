@@ -1,50 +1,50 @@
-import { Card, Image, Text, Group, Title, Container } from "@mantine/core";
+import { Card, Image, Text, Group, Badge, CardSection, Box } from "@mantine/core";
 import { IconChevronRight } from "@tabler/icons-react";
-import classes from "./BigCard.module.css";
-import restPic from "./doubleknot1.png";
+import classes from "./MiniCard.module.css";
+import pic from "./doubleknot2.jpg";
 
 let property = {
-  image: restPic,
+  image: pic,
   storeName: "Double Knot",
   address: "120 SOUTH 13TH ST",
   region: "PHILADELPHIA, PA, 19107",
   rating: "outstanding",
-  description:
-    "Indulge in Double Knot's happy hour for a delightful experience! Discover an enticing array of delectable dishes, generously portioned and reasonably priced.",
 };
 
-interface BigCardProps {
+interface MiniCardProps {
   image: string;
   storeName: string;
   address: string;
+  region: string;
   rating: string;
-  description: string;
 }
 
-export function BigCard() {
+export function MiniCard() {
   return (
-    <Card shadow="md" radius="md" p={0} className={classes.card}>
-      <Group wrap="nowrap" className={classes.group}>
-        <Image src={property.image.src} h={300} alt="something" />
-        <Container px={0} className={classes.container}>
-          <Title className={classes.restName}>{property.storeName}</Title>
-          <div>
-            <Text className={classes.restAddress}>{property.address}</Text>
-          </div>
-          <div>
-            <Text className={classes.restAddress}>{property.region}</Text>
-          </div>
-          <div>
-            <Text lineClamp={4} className={classes.textBox}>
-              {property.description}
-            </Text>
-          </div>
-          <Text className={classes.articleLink}>
-            <a href="./">
-              read more <IconChevronRight color="#800020" />
-            </a>
+    <Card shadow="md" radius="md" className={classes.card}>
+      <CardSection className={classes.section}>
+        <Image
+          src={property.image.src}
+          alt="something"
+          className={classes.image}
+        />
+      </CardSection>
+       <Badge
+        className={classes.badge}
+        size="xs"
+        variant="gradient"
+        gradient={{ from: "#512DA8", to: "blue" }}
+      >
+        {property.rating}
+      </Badge>
+      <Group className={classes.group}>
+        <Box className={classes.header}>
+          {property.storeName}
+          <Text className={classes.text}>
+            {property.address}
+            {property.region}
           </Text>
-        </Container>
+        </Box>
       </Group>
     </Card>
   );

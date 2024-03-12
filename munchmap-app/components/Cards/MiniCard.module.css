@@ -1,0 +1,35 @@
+.card {
+  background-color: var(--mantine-color-yellow-5);
+  width: 25%;
+  aspect-ratio: 1/1;
+}
+
+.section {
+  height: 70%;
+  display: flex;
+}
+
+.image {
+  width: 100%;
+}
+
+.group {
+    justify-content: space-evenly;
+    display: inline-block;
+}
+
+.header{
+    color: #f8f9fa;
+    font-weight: 400;
+    width: 80%;
+}
+
+.text {
+    color: #f8f9fa;
+    font-weight: 200;
+    font-size: small;
+}
+
+.badge {
+    position: absolute;
+}

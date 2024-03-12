@@ -10,17 +10,12 @@ import {
 } from "@mantine/core";
 import { IconChevronRight } from "@tabler/icons-react";
 import classes from "./BigCard.module.css";
-import restPic from "./doubleknot1.png";
+import restPic from "../resource/doubleknot1.png";
+import dummyData from "../resource/cardInfo.json"
 
 let property = {
   image: restPic,
-  storeName: "Double Knot",
-  address: "120 SOUTH 13TH ST",
-  region: "PHILADELPHIA, PA, 19107",
-  rating: "outstanding",
-  description:
-    "Indulge in Double Knot's happy hour for a delightful experience! Discover an enticing array of delectable dishes, generously portioned and reasonably priced.",
-};
+  ...dummyData};
 
 interface BigCardProps {
   image: string;

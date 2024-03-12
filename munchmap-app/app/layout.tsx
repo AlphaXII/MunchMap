@@ -4,6 +4,7 @@ import "./globals.css";
 import "@mantine/core/styles.css";
 import { createTheme, MantineProvider } from "@mantine/core";
 import { Header } from '../components/Header/Header';
+import '@mantine/carousel/styles.css';
 
 const theme = createTheme({
   /** Put your mantine theme override here */

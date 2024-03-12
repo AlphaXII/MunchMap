@@ -1,15 +1,12 @@
 import { Card, Image, Text, Group, Badge, CardSection, Box } from "@mantine/core";
 import { IconChevronRight } from "@tabler/icons-react";
 import classes from "./MiniCard.module.css";
-import pic from "./doubleknot2.jpg";
+import pic from "../resource/doubleknot2.jpg"
+import dummyData from "../resource/cardInfo.json"
 
 let property = {
   image: pic,
-  storeName: "Double Knot",
-  address: "120 SOUTH 13TH ST",
-  region: "PHILADELPHIA, PA, 19107",
-  rating: "outstanding",
-};
+  ...dummyData};
 
 interface MiniCardProps {
   image: string;

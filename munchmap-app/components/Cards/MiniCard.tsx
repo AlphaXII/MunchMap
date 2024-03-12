@@ -1,4 +1,4 @@
-import { Card, Image, Text, Group, Title, Container, Badge } from "@mantine/core";
+import { Card, Image, Text, Group, Title, Container } from "@mantine/core";
 import { IconChevronRight } from "@tabler/icons-react";
 import classes from "./BigCard.module.css";
 import restPic from "./doubleknot1.png";
@@ -28,7 +28,6 @@ export function BigCard() {
         <Image src={property.image.src} h={300} alt="something" />
         <Container px={0} className={classes.container}>
           <Title className={classes.restName}>{property.storeName}</Title>
-          <Badge className={classes.badge} size="lg" variant="gradient" gradient={{from: '#512DA8', to: 'blue'}}>{property.rating}</Badge>
           <div>
             <Text className={classes.restAddress}>{property.address}</Text>
           </div>

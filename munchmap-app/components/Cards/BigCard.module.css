@@ -6,23 +6,25 @@
 
 .group {
     height: 300px;
-    width: 90;
+    width: 100%;
 }
 
 .container {
     height: 100%;
-    width: 100%;
+    width: 50%;
     text-align: left;
 }
 
 
 .restName {
+    width: 70%;
     padding-top: 30px;
     padding-left: 20px;
     display: inline-flex;
     font-weight: 800;
     font-size: x-large;
     color: #f8f9fa;
+    
   }
 
 .restAddress {
@@ -34,25 +36,29 @@
 }
 
 .textBox {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 20px;
-    height: 120px;
-    width: 100%; 
-    display: inline-flex;
+    height: 110px;
     font-weight: 300;
-    font-size: medium;
-    overflow: hidden;
-    text-overflow: ellipsis;
     color: black;
+    
 }
 
-.articleLink {
+.articleLink a{
     padding: 10px;
-    text-align: right;
+    display: flex;
+    justify-content: right;
     color: #f8f9fa;
+    text-decoration: none
 }
 
 .image {
     height: 100%;
   }
+
+.badge {
+    margin-top: 35px;
+    margin-right: 10px;
+    float: right;
+}
 

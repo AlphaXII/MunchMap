@@ -94,6 +94,7 @@ export function CardsCarousel() {
       align="start"
       loop
       slidesToScroll={4}
+      withIndicators
     >
       <CarouselSlide>
         <MiniCard></MiniCard>

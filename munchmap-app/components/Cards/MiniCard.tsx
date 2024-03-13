@@ -18,7 +18,7 @@ interface MiniCardProps {
 
 export function MiniCard() {
   return (
-    <Card shadow="md" radius="md" className={classes.card}>
+    <Card h="100%" w="100%" shadow="md" radius="md" className={classes.card}>
       <CardSection className={classes.section}>
         <Image
           src={property.image.src}

@@ -89,11 +89,18 @@ export function CardsCarousel() {
 
   return (
     <Carousel
-      slideSize={{ base: "100%", sm: "50%" }}
-      slideGap={{ base: rem(2), sm: "xl" }}
+      slideSize={{ base: "25%", sm: "25%" }}
+      slideGap={{ base: rem(4), sm: "xl" }}
       align="start"
-      slidesToScroll={2}
+      loop
+      slidesToScroll={4}
     >
+      <CarouselSlide>
+        <MiniCard></MiniCard>
+      </CarouselSlide>
+      <CarouselSlide>
+        <MiniCard></MiniCard>
+      </CarouselSlide>
       <CarouselSlide>
         <MiniCard></MiniCard>
       </CarouselSlide>

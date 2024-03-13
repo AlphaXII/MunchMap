@@ -12,6 +12,7 @@ import classes from "./Header.module.css";
 import { useDisclosure } from "@mantine/hooks";
 import { useState } from "react";
 import Logo from "../Logo/Logo";
+import Link from "next/link";
 
 export function Header({ children }: any) {
   const links = [
@@ -25,18 +26,17 @@ export function Header({ children }: any) {
   const [active, setActive] = useState(links[0].link);
 
   const items = links.map((link) => (
-    <a
+    <Link
       key={link.label}
       href={link.link}
       className={classes.link}
       data-active={active === link.link || undefined}
       onClick={(event) => {
-        event.preventDefault();
         setActive(link.link);
       }}
     >
       {link.label}
-    </a>
+    </Link>
   ));
 
   return (

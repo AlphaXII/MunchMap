@@ -14,30 +14,7 @@ export default function Home() {
         <Space h="md" />
         <Divider size="xl" />
         <Space h="md" />
-        {/* <Carousel
-          withIndicators
-          height={200}
-          slideSize={{ base: "100%", sm: "50%", md: "33.333333%" }}
-          slideGap={{ base: 0, sm: "md" }}
-          loop
-          align="start"
-        >
-          <CarouselSlide>
-            <MiniCard />
-          </CarouselSlide>
-          <CarouselSlide>
-            <MiniCard />
-          </CarouselSlide>
-          <CarouselSlide>
-            <MiniCard />
-          </CarouselSlide>
-          <CarouselSlide>
-            <MiniCard />
-          </CarouselSlide>
-          <CarouselSlide>
-            <MiniCard />
-          </CarouselSlide>
-        </Carousel> */}
+        <MiniCard />
       </Container>
     </>
   );

@@ -1,0 +1,9 @@
+.mmlogo {
+    display: inline-flex;
+    padding-right: 20px;
+  }
+
+.textBox {
+    align-items: center;
+    display: inline-flex;
+}

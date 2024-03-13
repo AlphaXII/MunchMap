@@ -9,6 +9,7 @@ import {
   rem,
 } from "@mantine/core";
 import classes from "./Carousel.module.css";
+import { MiniCard } from "@/components/Cards/MiniCard";
 
 interface CardProps {
   image: string;
@@ -93,7 +94,18 @@ export function CardsCarousel() {
       align="start"
       slidesToScroll={2}
     >
-      {slides}
+      <CarouselSlide>
+        <MiniCard></MiniCard>
+      </CarouselSlide>
+      <CarouselSlide>
+        <MiniCard></MiniCard>
+      </CarouselSlide>
+      <CarouselSlide>
+        <MiniCard></MiniCard>
+      </CarouselSlide>
+      <CarouselSlide>
+        <MiniCard></MiniCard>
+      </CarouselSlide>
     </Carousel>
   );
 }

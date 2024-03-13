@@ -19,11 +19,8 @@ export default function Home() {
         <Space h="md" />
         <Divider size="xl" />
         <Space h="md" />
-        <MiniCard />
+        <CardsCarousel></CardsCarousel>
       </Container>
-
-      <div>hello world</div>
-      <CardsCarousel></CardsCarousel>
 
     </>
   );

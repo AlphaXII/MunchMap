@@ -6,7 +6,7 @@ import { Container, Divider, Space, Title } from "@mantine/core";
 import { Carousel, CarouselSlide } from "@mantine/carousel";
 import { MiniCard } from "@/components/Cards/MiniCard";
 
-import { CardsCarousel } from "./components/Carousel";
+import { CardsCarousel } from "../components/Carousel/Carousel";
 
 
 export default function Home() {

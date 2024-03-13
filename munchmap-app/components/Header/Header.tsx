@@ -16,7 +16,7 @@ import Logo from "../Logo/Logo";
 export function Header({ children }: any) {
   const links = [
     { link: "/", label: "Home" },
-    { link: "/index", label: "Index" },
+    { link: "/indexlist", label: "Index" },
     { link: "/map", label: "Map" },
     { link: "/info", label: "Info" },
   ];

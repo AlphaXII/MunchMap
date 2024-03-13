@@ -1,7 +1,9 @@
 .container {
-  margin: 50px auto;
+  /* margin: auto; */
+  /* overflow: auto; */
+  padding: 10px;
 }
 
 .title {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }

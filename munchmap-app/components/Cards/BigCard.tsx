@@ -62,8 +62,6 @@ export function BigCard() {
   return (
     <>
       <Card
-        shadow="md"
-        radius="md"
         p={0}
         className={classes.card}
         visibleFrom="sm"
@@ -81,7 +79,7 @@ export function BigCard() {
           </Container>
         </Group>
       </Card>
-      <Card shadow="md" radius="md" className={classes.card2} hiddenFrom="sm">
+      <Card  radius="md" className={classes.card2} hiddenFrom="sm">
         <CardSection className={classes.section}>
           <Image src={property.image.src} w="100%" alt="something" />
         </CardSection>

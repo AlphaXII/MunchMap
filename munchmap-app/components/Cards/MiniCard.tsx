@@ -1,12 +1,21 @@
-import { Card, Image, Text, Group, Badge, CardSection, Box } from "@mantine/core";
+import {
+  Card,
+  Image,
+  Text,
+  Group,
+  Badge,
+  CardSection,
+  Box,
+} from "@mantine/core";
 import { IconChevronRight } from "@tabler/icons-react";
 import classes from "./MiniCard.module.css";
-import pic from "../resource/doubleknot2.jpg"
-import dummyData from "../resource/cardInfo.json"
+import pic from "../resource/doubleknot2.jpg";
+import dummyData from "../resource/cardInfo.json";
 
 let property = {
   image: pic,
-  ...dummyData};
+  ...dummyData,
+};
 
 interface MiniCardProps {
   image: string;
@@ -18,7 +27,7 @@ interface MiniCardProps {
 
 export function MiniCard() {
   return (
-    <Card h="100%" w="100%" shadow="md" radius="md" className={classes.card}>
+    <Card h="100%" w="100%" className={classes.card}>
       <CardSection className={classes.section}>
         <Image
           src={property.image.src}
@@ -26,9 +35,9 @@ export function MiniCard() {
           className={classes.image}
         />
       </CardSection>
-       <Badge
+      <Badge
         className={classes.badge}
-        size="xs"
+        // size="xs"
         variant="gradient"
         gradient={{ from: "#512DA8", to: "blue" }}
       >

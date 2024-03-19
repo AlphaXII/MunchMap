@@ -2,10 +2,14 @@ import { Carousel, CarouselSlide } from "@mantine/carousel";
 import { rem } from "@mantine/core";
 import classes from "./Carousel.module.css";
 import { MiniCard } from "@/components/Cards/MiniCard";
+import { dataInterface } from "../resource/interfaces";
 
-
-export function CardsCarousel() {
-
+export function CardsCarousel({data}: {data: dataInterface[]}) {
+  const slides = data.map((item) => (
+    <CarouselSlide key={item.storeName}>
+      <MiniCard restaurantData={item}/>
+    </CarouselSlide>
+  ))
   return (
     <Carousel
       slideSize={{ base: "100%", sm: "25%" }}
@@ -16,24 +20,7 @@ export function CardsCarousel() {
       height="100%"
       classNames={classes}
     >
-      <CarouselSlide>
-        <MiniCard />
-      </CarouselSlide>
-      <CarouselSlide>
-        <MiniCard />
-      </CarouselSlide>
-      <CarouselSlide>
-        <MiniCard />
-      </CarouselSlide>
-      <CarouselSlide>
-        <MiniCard />
-      </CarouselSlide>
-      <CarouselSlide>
-        <MiniCard />
-      </CarouselSlide>
-      <CarouselSlide>
-        <MiniCard />
-      </CarouselSlide>
+      {slides}
     </Carousel>
   );
 }

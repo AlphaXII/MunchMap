@@ -7,30 +7,17 @@ import {
   CardSection,
   Box,
 } from "@mantine/core";
-import { IconChevronRight } from "@tabler/icons-react";
 import classes from "./MiniCard.module.css";
-import pic from "../resource/doubleknot2.jpg";
-import dummyData from "../resource/cardInfo.json";
+import { dataInterface } from "../resource/interfaces";
 
-let property = {
-  image: pic,
-  ...dummyData,
-};
 
-interface MiniCardProps {
-  image: string;
-  storeName: string;
-  address: string;
-  region: string;
-  rating: string;
-}
 
-export function MiniCard() {
+export function MiniCard({restaurantData}: {restaurantData: dataInterface}) {
   return (
     <Card h="100%" w="100%" className={classes.card}>
       <CardSection className={classes.section}>
         <Image
-          src={property.image.src}
+          src={restaurantData.image.src}
           alt="something"
           className={classes.image}
         />
@@ -41,14 +28,14 @@ export function MiniCard() {
         variant="gradient"
         gradient={{ from: "#512DA8", to: "blue" }}
       >
-        {property.rating}
+        {restaurantData.rating}
       </Badge>
       <Group className={classes.group}>
         <Box className={classes.header}>
-          {property.storeName}
+          {restaurantData.storeName}
           <Text className={classes.text}>
-            {property.address}
-            {property.region}
+            {restaurantData.address}
+            {restaurantData.region}
           </Text>
         </Box>
       </Group>

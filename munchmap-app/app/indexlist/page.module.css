@@ -1,0 +1,10 @@
+.container {
+  padding: 10px;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: 500;
+  color: #008195;
+}

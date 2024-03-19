@@ -11,20 +11,9 @@ import {
 import { IconChevronRight } from "@tabler/icons-react";
 import classes from "./BigCard.module.css";
 import restPic from "../resource/doubleknot1.png";
-import dummyData from "../resource/cardInfo.json"
+import { dummyDatabase } from "../resource/dummyDatabase";
 
-let property = {
-  image: restPic,
-  ...dummyData};
-
-interface BigCardProps {
-  image: string;
-  storeName: string;
-  address: string;
-  regional: string;
-  rating: string;
-  description: string;
-}
+let property = dummyDatabase[0];
 
 function fillCard(
   rating: string,
@@ -61,13 +50,9 @@ function fillCard(
 export function BigCard() {
   return (
     <>
-      <Card
-        p={0}
-        className={classes.card}
-        visibleFrom="sm"
-      >
+      <Card p={0} className={classes.card} visibleFrom="sm">
         <Group wrap="nowrap" className={classes.group}>
-          <Image src={property.image.src} h={300} alt="something" />
+          <Image src={restPic.src} h={300} alt="something" />
           <Container px={0} className={classes.container}>
             {fillCard(
               property.rating,
@@ -79,9 +64,9 @@ export function BigCard() {
           </Container>
         </Group>
       </Card>
-      <Card  radius="md" className={classes.card2} hiddenFrom="sm">
+      <Card radius="md" className={classes.card2} hiddenFrom="sm">
         <CardSection className={classes.section}>
-          <Image src={property.image.src} w="100%" alt="something" />
+          <Image src={restPic.src} w="100%" alt="something" />
         </CardSection>
         <Container px={0} className={classes.container2}>
           {fillCard(

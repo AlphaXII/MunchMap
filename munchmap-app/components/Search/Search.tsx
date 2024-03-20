@@ -4,8 +4,6 @@ import { Input } from "@mantine/core";
 import { IconSearch } from "@tabler/icons-react";
 import { useState } from "react";
 
-const icon = <IconSearch />;
-
 export default function Search({ placeholder }: { placeholder: string }) {
   const [value, setValue] = useState("");
 

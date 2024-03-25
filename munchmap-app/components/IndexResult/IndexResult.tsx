@@ -22,16 +22,22 @@ export default function IndexResult({
 }) {
   const [activePage, setActivePage] = useState(1);
   const data = chunk(children);
-  const items = data[activePage - 1].map((item) => (
-    <GridCol key={item.storeName} span={4}>
-      <MiniCard restaurantData={item} />
+  const items = !data.length ? (
+    <GridCol span={4}>
+      0 items found
     </GridCol>
-  ));
+  ) : (
+    data[activePage - 1].map((item) => (
+      <GridCol key={item.storeName} span={4}>
+        <MiniCard restaurantData={item} />
+      </GridCol>
+    ))
+  );
   return (
     <>
-      <Grid classNames={{root: classes.groot}}>{items}</Grid>
+      <Grid classNames={{ root: classes.groot }}>{items}</Grid>
       <Pagination
-        classNames={{root: classes.proot, control: classes.pcontrol}}
+        classNames={{ root: classes.proot, control: classes.pcontrol }}
         total={data.length}
         value={activePage}
         onChange={setActivePage}

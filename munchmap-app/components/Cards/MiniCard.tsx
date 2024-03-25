@@ -24,7 +24,6 @@ export function MiniCard({restaurantData}: {restaurantData: dataInterface}) {
       </CardSection>
       <Badge
         className={classes.badge}
-        // size="xs"
         variant="gradient"
         gradient={{ from: "#512DA8", to: "blue" }}
       >
@@ -35,6 +34,7 @@ export function MiniCard({restaurantData}: {restaurantData: dataInterface}) {
           {restaurantData.storeName}
           <Text className={classes.text}>
             {restaurantData.address}
+            <br></br>
             {restaurantData.region}
           </Text>
         </Box>

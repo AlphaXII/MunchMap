@@ -16,18 +16,21 @@
 .group {
     justify-content: space-evenly;
     display: inline-block;
+    height: 100%;
 }
 
 .header{
     color: #f8f9fa;
     font-weight: 400;
     width: 80%;
+    height: 100%;
 }
 
 .text {
     color: #f8f9fa;
     font-weight: 200;
     font-size: small;
+    display: block;
 }
 
 .badge {

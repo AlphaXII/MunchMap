@@ -13,6 +13,7 @@ import { useDisclosure } from "@mantine/hooks";
 import { useState } from "react";
 import Logo from "../Logo/Logo";
 import Link from "next/link";
+import { usePathname } from 'next/navigation'
 
 export function Header({ children }: any) {
   const links = [
@@ -23,7 +24,7 @@ export function Header({ children }: any) {
   ];
 
   const [opened, { toggle }] = useDisclosure(false);
-  const [active, setActive] = useState(links[0].link);
+  const [active, setActive] = useState(usePathname());
 
   const items = links.map((link) => (
     <Link

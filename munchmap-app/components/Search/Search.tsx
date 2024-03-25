@@ -3,6 +3,8 @@
 import { Input } from "@mantine/core";
 import { IconSearch } from "@tabler/icons-react";
 import { useState } from "react";
+import { dummyDatabase } from "@/components/resource/dummyDatabase";
+import IndexResult from "@/components/IndexResult/IndexResult";
 
 export default function Search({ placeholder }: { placeholder: string }) {
   const [value, setValue] = useState("");
@@ -22,6 +24,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
         }}
         rightSection={<IconSearch style={{display: value ? 'none' : undefined}}/>}
       />
+      <IndexResult>{dummyDatabase}</IndexResult>
     </>
   );
 }

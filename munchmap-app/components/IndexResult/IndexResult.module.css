@@ -1,0 +1,27 @@
+.proot {
+  position: relative;
+  float: right;
+}
+
+.groot {
+  height: fit-content;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* .pcontrol {
+  background-color: #008195;
+  --mantine-color-text: white;
+  border-color: var(--mantine-color-yellow-5);
+
+  &[data-disabled] {
+    color: red;
+  }
+  
+  &[data-active] {
+    color: var(--mantine-color-yellow-5);
+    --pagination-active-bg: var(--mantine-color-yellow-5);
+  }
+  
+}
+ */

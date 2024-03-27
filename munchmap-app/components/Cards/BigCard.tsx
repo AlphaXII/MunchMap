@@ -12,6 +12,7 @@ import { IconChevronRight } from "@tabler/icons-react";
 import classes from "./BigCard.module.css";
 import restPic from "../resource/doubleknot1.png";
 import { dummyDatabase } from "../resource/dummyDatabase";
+import { GradeBadge } from "../GradeBadge/GradeBadge";
 
 let property = dummyDatabase[0];
 
@@ -25,14 +26,7 @@ function fillCard(
   return (
     <>
       <Title className={classes.restName}>{storeName}</Title>
-      <Badge
-        className={classes.badge}
-        size="lg"
-        variant="gradient"
-        gradient={{ from: "#512DA8", to: "blue" }}
-      >
-        {rating}
-      </Badge>
+      <GradeBadge style={classes.badge} grade={rating} />
       <Text className={classes.restAddress}>{address}</Text>
       <Text className={classes.restAddress}>{region}</Text>
       <Text lineClamp={4} className={classes.textBox}>

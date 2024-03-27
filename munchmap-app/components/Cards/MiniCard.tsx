@@ -9,12 +9,15 @@ import {
 } from "@mantine/core";
 import classes from "./MiniCard.module.css";
 import { dataInterface } from "../resource/interfaces";
+import { GradeBadge } from "../GradeBadge/GradeBadge";
 
-
-
-export function MiniCard({restaurantData}: {restaurantData: dataInterface}) {
+export function MiniCard({
+  restaurantData,
+}: {
+  restaurantData: dataInterface;
+}) {
   return (
-    <Card h="100%" w="100%" className={classes.card}>
+    <Card w="100%" className={classes.card}>
       <CardSection className={classes.section}>
         <Image
           src={restaurantData.image.src}
@@ -22,13 +25,7 @@ export function MiniCard({restaurantData}: {restaurantData: dataInterface}) {
           className={classes.image}
         />
       </CardSection>
-      <Badge
-        className={classes.badge}
-        variant="gradient"
-        gradient={{ from: "#512DA8", to: "blue" }}
-      >
-        {restaurantData.rating}
-      </Badge>
+      <GradeBadge style={classes.badge} grade={restaurantData.rating} />
       <Group className={classes.group}>
         <Box className={classes.header}>
           {restaurantData.storeName}

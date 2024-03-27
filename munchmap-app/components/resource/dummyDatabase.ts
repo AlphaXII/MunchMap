@@ -6,7 +6,7 @@ export const dummyDatabase = [
     storeName: "Double Knot",
     address: "120 SOUTH 13TH ST",
     region: "PHILADELPHIA, PA, 19107",
-    rating: "outstanding",
+    rating: "5",
     description:
       "Indulge in Double Knot's happy hour for a delightful experience! Discover an enticing array of delectable dishes, generously portioned and reasonably priced.",
   },
@@ -15,7 +15,7 @@ export const dummyDatabase = [
     storeName: "Single Knot",
     address: "120 SOUTH 13TH ST",
     region: "PHILADELPHIA, PA, 19107",
-    rating: "outstanding",
+    rating: "5",
     description:
       "Indulge in Double Knot's happy hour for a delightful experience! Discover an enticing array of delectable dishes, generously portioned and reasonably priced.",
   },
@@ -24,7 +24,7 @@ export const dummyDatabase = [
     storeName: "Triple Knot",
     address: "120 SOUTH 13TH ST",
     region: "PHILADELPHIA, PA, 19107",
-    rating: "outstanding",
+    rating: "5",
     description:
       "Indulge in Double Knot's happy hour for a delightful experience! Discover an enticing array of delectable dishes, generously portioned and reasonably priced.",
   },
@@ -33,7 +33,7 @@ export const dummyDatabase = [
     storeName: "Quadruple Knot",
     address: "120 SOUTH 13TH ST",
     region: "PHILADELPHIA, PA, 19107",
-    rating: "outstanding",
+    rating: "5",
     description:
       "Indulge in Double Knot's happy hour for a delightful experience! Discover an enticing array of delectable dishes, generously portioned and reasonably priced.",
   },
@@ -42,7 +42,7 @@ export const dummyDatabase = [
     storeName: "Quintuple Knot",
     address: "120 SOUTH 13TH ST",
     region: "PHILADELPHIA, PA, 19107",
-    rating: "outstanding",
+    rating: "5",
     description:
       "Indulge in Double Knot's happy hour for a delightful experience! Discover an enticing array of delectable dishes, generously portioned and reasonably priced.",
   },
@@ -51,7 +51,7 @@ export const dummyDatabase = [
     storeName: "Sextuple Knot",
     address: "120 SOUTH 13TH ST",
     region: "PHILADELPHIA, PA, 19107",
-    rating: "outstanding",
+    rating: "5",
     description:
       "Indulge in Double Knot's happy hour for a delightful experience! Discover an enticing array of delectable dishes, generously portioned and reasonably priced.",
   },
@@ -60,7 +60,7 @@ export const dummyDatabase = [
     storeName: "Septuple Knot",
     address: "120 SOUTH 13TH ST",
     region: "PHILADELPHIA, PA, 19107",
-    rating: "outstanding",
+    rating: "5",
     description:
       "Indulge in Double Knot's happy hour for a delightful experience! Discover an enticing array of delectable dishes, generously portioned and reasonably priced.",
   },
@@ -69,7 +69,7 @@ export const dummyDatabase = [
     storeName: "Octuple Knot",
     address: "120 SOUTH 13TH ST",
     region: "PHILADELPHIA, PA, 19107",
-    rating: "outstanding",
+    rating: "5",
     description:
       "Indulge in Double Knot's happy hour for a delightful experience! Discover an enticing array of delectable dishes, generously portioned and reasonably priced.",
   },
@@ -78,7 +78,7 @@ export const dummyDatabase = [
     storeName: "Nonuple Knot",
     address: "120 SOUTH 13TH ST",
     region: "PHILADELPHIA, PA, 19107",
-    rating: "outstanding",
+    rating: "5",
     description:
       "Indulge in Double Knot's happy hour for a delightful experience! Discover an enticing array of delectable dishes, generously portioned and reasonably priced.",
   },

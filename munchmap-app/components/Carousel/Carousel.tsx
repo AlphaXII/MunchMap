@@ -12,8 +12,8 @@ export function CardsCarousel({data}: {data: dataInterface[]}) {
   ))
   return (
     <Carousel
-      slideSize={{ base: "100%", sm: "25%" }}
-      slideGap={{ base: rem(4), sm: "xl" }}
+      slideSize="33.33%"
+      slideGap="xl"
       align="start"
       loop
       slidesToScroll={1}
